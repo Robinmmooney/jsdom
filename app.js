@@ -1,11 +1,9 @@
-const banner = document.querySelector('#page-banner');
+const bookList = document.querySelector('#book-list');
 
-console.log('#page-banner node type is:' ,banner.nodeType);
-console.log('#page-banner node name is:' ,banner.nodeName);
-console.log('#page-banner has child nodes:' ,banner.hasChildNodes());
+console.log('The parent node is:',bookList.parentNode);
+console.log('The parent element is:',bookList.parentElement.parentElement);
 
-const clonedBanner = banner.cloneNode(true);
-console.log(clonedBanner);
+console.log(bookList.children);
 
 
 
@@ -17,33 +15,25 @@ console.log(clonedBanner);
 
 
 
-// var books = document.querySelectorAll('#book-list li .name');
-
-// Array.from(books).forEach(function(book){
-//     book.textContent += "(book title)";
-// });
-
-// const booklist = document.querySelector('#book-list');
-// booklist.innerHTML = '<h2>Books and More Books</h2>';
-// booklist.innerHTML += '<p> This is how you add HTML</P>';
-
-
-
-
-
-
-
-
-
-
-
-
-// const books = document.querySelectorAll('#book-list li .name');
-
-// Array.from(books).forEach(function(book){
-//   book.textContent += ' (Book title)';
-// });
 
 // const bookList = document.querySelector('#book-list');
-// bookList.innerHTML = '<h2>Books and more books...</h2>';
-// bookList.innerHTML += '<p>This is how you add HTML content</p>';
+
+// console.log('book list parent element:', bookList.parentElement);
+// console.log('book list parent node:', bookList.parentNode);
+
+// console.log('all node children:');
+// Array.from(bookList.childNodes).forEach(function(node){
+//   console.log(node);
+// });
+
+// console.log('all element children:');
+// Array.from(bookList.children).forEach(function(node){
+//   console.log(node);
+// });
+
+// const titles = bookList.querySelectorAll('.name');
+
+// console.log('Book titles:');
+// Array.from(titles).forEach(function(title){
+//   console.log(title.textContent);
+// });
