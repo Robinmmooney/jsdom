@@ -1,12 +1,31 @@
-var books = document.querySelectorAll('#book-list li .name');
+const banner = document.querySelector('#page-banner');
 
-Array.from(books).forEach(function(book){
-    book.textContent += "(book title)";
-});
+console.log('#page-banner node type is:' ,banner.nodeType);
+console.log('#page-banner node name is:' ,banner.nodeName);
+console.log('#page-banner has child nodes:' ,banner.hasChildNodes());
 
-const booklist = document.querySelector('#book-list');
-booklist.innerHTML = '<h2>Books and More Books</h2>';
-booklist.innerHTML += '<p> This is how you add HTML</P>';
+const clonedBanner = banner.cloneNode(true);
+console.log(clonedBanner);
+
+
+
+
+
+
+
+
+
+
+
+// var books = document.querySelectorAll('#book-list li .name');
+
+// Array.from(books).forEach(function(book){
+//     book.textContent += "(book title)";
+// });
+
+// const booklist = document.querySelector('#book-list');
+// booklist.innerHTML = '<h2>Books and More Books</h2>';
+// booklist.innerHTML += '<p> This is how you add HTML</P>';
 
 
 
